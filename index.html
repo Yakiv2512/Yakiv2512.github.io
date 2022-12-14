@@ -1,377 +1,722 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Компания Uber Partners</title>
-    <script src="https://kit.fontawesome.com/35c17310e2.js" crossorigin="anonymous"></script>
-    <link rel="icon" href="icons/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/fonts.css">
+    <title>RunSmart</title>
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
-    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <!-- header -->
-    <header>
-            <nav>
-                <div class="container">
-                    <ul class="menu">
-                        <li class="menu_item"><a href="#" class="menu_link">Главная</a></li>
-                        <li class="menu_item"><a href="#require" class="menu_link">Со своим автомобилем</a></li>
-                        <li class="menu_item"><a href="#require" class="menu_link">На автомобиле компании</a></li>
-                        <li class="menu_item"><a href="#" class="menu_link">Требования</a></li>
-                        <li class="menu_item"><a href="#" class="menu_link">Контакты</a></li>
-                        <li class="menu_item_last"><a href="#" class="menu_link">Оставить заявку</a></li>
-                    </ul>
-                </div>
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </nav>
-            
-            <div class="subheader">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-6 col-md-4 offset-md-1">
-                            <a href="#" class="subheader_logo"><img src="img/sc1_main/logo_Uber.png" alt="Logo"></a>
-                            <div class="subheader_text">
-                                Официальный партнер Uber в Москве
-                            </div>
-                        </div>
-            
-                        <div class="hidden col-6 col-md-3 offset-md-1 col-xl-2 offset-xl-2">
-                            <div class="subheader_tel">Звоните нам ежедневно</div>
-                            <a href="tel:84957970988" class="subheader_call">8 495 797 09 88</a>
-                        </div>
-            
-                        <div class="col-6 col-md-3">
-                            <a href="tel:84957970988" class="visible subheader_call">8 495 797 09 88</a>
-                            <button class="subheader_btn">заказать звонок</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </header>
-
-    <!--sc1_main-->
-    <section class="sc1_main">
+    
+    <section id="up" class="promo">
         <div class="container">
-            <div class="row">
-                <div class="col-md-12 col-lg-10 offset-lg-1">
-                    <h1 class="sc1_main_h1">КОМПАНИЯ UBER PARTNERS!</h1>
-                    <h2 class="sc1_main_h2">ПРИГЛАШАЕМ ВОДИТЕЛЕЙ! НА СВОЕМ АВТО!</h2>
-                    <div class="sc1_main_text">
-                        Компания UBER динамически развивающаяся. Компания на рынке занимает лидирующее место средитаксомоторных компаний,
-                        Компания абсолютно прозрачная вы можете контролировать все процессы у себя в личном кабинете. Бонуcная система.Помимо
-                        выполненной работы по заказам, компания начисляет бонусы запиковое время.
-                        <br><br>
-                        Мы одни из партнеров и зарекомендовали себя
-                        как одна из лучших команд в городе Москве. Водители у насзарабатывают от 80000- 120000 в месяц.
+            <header class="header">
+                <a href="#" class="header__logo">
+                    <img src="icons/main/logo.png" alt="logo">
+                </a>
+                <div class="header__official">
+                    Официальный представитель
+                    <span>Garmin, Polar, Suunto</span>
+                </div>
+                <div class="header__contacts">
+                    <a href="tel.+74999228974" class="header__phone">+7 (499) 922-89-74</a>
+                    <button data-modal="consultation" class="button">заказать звонок</button>
+                </div>
+            </header>
+            <div class="promo__wrapper">
+                <h1 class="promo__header">Подбор пульсометра</h1>
+                <h2 class="promo__subheader">с учётом Вашего уровня подготовки</h2>
+                <div class="promo__icons">
+                    <div class="promo__icon">
+                        <img src="icons/main/timer.png" alt="timer">
+                        Время подбора: 10 минут
                     </div>
-                    <button class="sc1_main_btn">ОТПРАВИТЬ ЗАЯВКУ!</button>
+                    <div class="promo__icon">
+                        <img src="icons/main/delivery.png" alt="delivery">
+                        Бесплатная доставка
+                    </div>
+                    <div class="promo__icon">
+                        <img src="icons/main/messages.png" alt="messages">
+                        Ответим на все вопросы
+                    </div>
+                </div>
+                <button data-modal="consultation" class="button button_main">заказать кОНСУЛЬТАЦИЮ</button>
+                <div class="promo__link">
+                    или
+                    <a href="#catalog">ПЕРЕЙТИ В КАТАЛОГ</a>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- sc2_reasons -->
-    <section class="sc2_reasons">
+    
+    <section class="benefits">
         <div class="container">
-            <div class="sc2_reasons_benefits"><span>преимущества</span></div>
-            <h2 class="title">8 причин начать работать с нами</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="sc2_reasons_block">
-                        <div class="sc2_reasons_round"><img src="img/sc2_8 reasons/1.png" alt="img" class="sc2_reasons_img">
-                        </div>
-                        <div class="sc2_reasons_text">
-                            <div class="sc2_reasons_header">
-                                Никаких наличных, оплата происходит автоматически
-                            </div>
-                            <div class="sc2_reasons_desc">
-                                Стоимость поездки оплачивается пассажиром с привязанной банковской карты, т.е. нет никаких рисков связанных с перевозкой наличности как для пассажира, так и для водителя, Вам не нужно
-                            искать мелкие деньги для размена.
-                            </div>
-                        </div>
+            <h2 class="title">
+                НАШИ ПРЕИМУЩЕСТВА
+            </h2>
+            <div class="benefits__items">
+                <div class="benefits__item wow animate__animated animate__zoomIn" data-wow-delay="0.2s">
+                    <div class="benefits__img">
+                        <img src="icons/benefits/cup.png" alt="cup">
+                    </div>
+                    <div class="benefits__header">
+                        Делимся опытом
+                    </div>
+                    <div class="benefits__desc">
+                        Наши сотрудники всегда готовы поделиться своим опытом, так как сами бегают полумарафоны, переплыли Босфор, готовятся к соревнованиям по триатлону!
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="sc2_reasons_block">
-                        <div class="sc2_reasons_round"><img src="img/sc2_8 reasons/2.png" alt="img" class="sc2_reasons_img"></div>
-                        <div class="sc2_reasons_text">
-                            <div class="sc2_reasons_header">
-                                Высокий доход с гарантированными выплатами
-                            </div>
-                            <div class="sc2_reasons_desc">
-                                Мы выплачиваем заработную плату на личную банковскую карту водителя! Вам не нужно оформлять ООО, ИП, платить налоги, подавать декларацию, оплачивать бухгалтерские услуги и ведение банковского
-                                счета.
-                            </div>
-                        </div>
+                <div class="benefits__item wow animate__animated animate__zoomIn" data-wow-delay="0.2s">
+                    <div class="benefits__img">
+                        <img class="benefits__img-animated" src="icons/benefits/heart.png" alt="heart">
+                    </div>
+                    <div class="benefits__header">
+                        Заботимся о здоровье
+                    </div>
+                    <div class="benefits__desc">
+                        Мы работаем для того, чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="sc2_reasons_block">
-                        <div class="sc2_reasons_round"><img src="img/sc2_8 reasons/3.png" alt="img" class="sc2_reasons_img"></div>
-                        <div class="sc2_reasons_text">
-                            <div class="sc2_reasons_header">
-                                Комфортное, прозрачное и простое подключение
-                            </div>
-                            <div class="sc2_reasons_desc">
-                                Мы подключаем дистанционно и бесплатно, Вам нет необходимости приезжать к нам! Вы присылаете нам копии документов, мы регистрируем Вас и присылаем данные для подключения, через 1-2 дня Вы можете
-                            начинать работать!
-                            </div>
-                        </div>
+                <div class="benefits__item wow animate__animated animate__zoomIn" data-wow-delay="0.2s">
+                    <div class="benefits__img">
+                        <img src="icons/benefits/shoe.png" alt="shoe">
                     </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="sc2_reasons_block">
-                        <div class="sc2_reasons_round"><img src="img/sc2_8 reasons/4.png" alt="img" class="sc2_reasons_img"></div>
-                        <div class="sc2_reasons_text">
-                            <div class="sc2_reasons_header">
-                                Круглосуточная поддержка
-                            </div>
-                            <div class="sc2_reasons_desc">
-                                В Uber действует круглосуточная поддержка водителей по электронной почте. Если что-то непонятно, Вы всегда можете задать вопрос через On-line консультацию.
-                            </div>                            
-                        </div>
-                    </div>  
-                </div>
-                <div class="col-md-6">
-                    <div class="sc2_reasons_block">
-                        <div class="sc2_reasons_round"><img src="img/sc2_8 reasons/5.png" alt="img" class="sc2_reasons_img"></div>
-                        <div class="sc2_reasons_text">
-                            <div class="sc2_reasons_header">
-                                Комиссия 8% + БОНУСЫ
-                            </div>
-                            <div class="sc2_reasons_desc">
-                                У нас минимальная комиссия и мы выплачиваем бонусы за каждую поездку, некоторые наши конкуренты
-                                оставляют бонусы себе. Мы работаем честно и с нами водители зарабатывают больше!
-                            </div>
-                        </div>
+                    <div class="benefits__header">
+                        Учим бегать
                     </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="sc2_reasons_block">
-                        <div class="sc2_reasons_round"><img src="img/sc2_8 reasons/6.png" alt="img" class="sc2_reasons_img"></div>
-                        <div class="sc2_reasons_text">
-                            <div class="sc2_reasons_header">
-                                Работа в удобное время, никаких графиков
-                            </div>
-                            <div class="sc2_reasons_desc">
-                                Вы просто нажимаете кнопку выйти на линию для начала работы, когда решите
-                                закончить, нажимаете выйти с линии. Вы можете подраба-
-                                тывать только утром, вечером, в выходные или праздничные дни!
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="sc2_reasons_block">
-                        <div class="sc2_reasons_round"><img src="img/sc2_8 reasons/7.png" alt="img" class="sc2_reasons_img"></div>
-                        <div class="sc2_reasons_text">
-                            <div class="sc2_reasons_header">
-                                Всегда большое количество заказов
-                            </div>
-                            <div class="sc2_reasons_desc">
-                                Приложение показывает, где на данный момент больше всего заказов и где действуют
-                                повышенные тарифы. У Вас не будет простоя и холостых пробегов. Наши пассажиры всегда приятные и абсолютно неконфликтные
-                                люди, которых приятно возить.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="sc2_reasons_block">
-                        <div class="sc2_reasons_round"><img src="img/sc2_8 reasons/8.png" alt="img" class="sc2_reasons_img"></div>
-                        <div class="sc2_reasons_text">
-                            <div class="sc2_reasons_header">
-                                Без шашечек и наклеек
-                            </div>
-                            <div class="sc2_reasons_desc">
-                                Вам не нужно менять цвет, устанавливать «шашки» на автомобиль и обклеивать его наклейками.
-                            </div>
-                        </div>
+                    <div class="benefits__desc">
+                        Помогаем с обучением правильной технике бега! Дружим с крупнейшей школой бега в России - 
+                        <span>I LOVE RUNNING.</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="mobile">
+    <section class="consultation">
         <div class="container">
-            <div class="label">возможности</div>
-            <div class="title">мобильное приложение убер</div>
-            <div class="subtitle">Сделайте заказ, совершите поездку и оплатите ее стоимость, используя свой мобильный телефон</div>
-
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="mobile_item mobile_item_1">
-                        <div class="mobile_item_title">оформление заказа одним касанием</div>
-                        <div class="mobile_item_plus"></div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="mobile_item mobile_item_2">
-                        <div class="mobile_item_title">надежная подача</div>
-                        <div class="mobile_item_plus"></div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="mobile_item mobile_item_3">
-                        <div class="mobile_item_title">прозрачные цены</div>
-                        <div class="mobile_item_plus"></div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="mobile_item mobile_item_4">
-                        <div class="mobile_item_title">безналичная оплата</div>
-                        <div class="mobile_item_plus"></div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="mobile_item mobile_item_5">
-                        <div class="mobile_item_title">обратная связь</div>
-                        <div class="mobile_item_plus"></div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="mobile_item mobile_item_6">
-                        <div class="mobile_item_title">разделить стоимость поездки</div>
-                        <div class="mobile_item_plus"></div>
-                    </div>
-                </div>
+            <h2 class="title title_left">
+                Получите бесплатную консультацию<br>
+                по подбору пульсометра
+            </h2>
+            <div class="consultation__desc">
+                Просто заполните форму заявки<br>
+                и мы перезвоним вам в течении 10 минут
             </div>
+            <form id="consultation-form" class="feed-form" action="#">
+                <input name="name" required placeholder="Ваше имя" type="text">
+                <input name="phone" required placeholder="Ваш телефон" type="tel">
+                <input name="email" required placeholder="Ваш E-mail" type="email">
+
+                <button class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>
+            </form>
         </div>
     </section>
 
-    <section class="choice">
+    <div class="slider">
         <div class="container">
-            <div class="label">возможности</div>
-            <div class="title">Выбор - отличная штука!</div>
-            <div class="subtitle">Закажите автомобиль, который подходит вам по стилю и бюджету</div>
-            <div class="choice_img">
-                <img src="img/sc4_choice/Car.png" alt="car">
+            <div class="slider__inner">
+                <div>
+                    <img src="img/slider/slide1.png" alt="1">
+                </div>
+                <div>
+                    <img src="img/slider/slide2.png" alt="2">
+                </div>
+                <div>
+                    <img src="img/slider/slide3.png" alt="3">
+                </div>
+              </div>
+        </div>
+    </div>
+
+    <section class="catalog">
+        <div id="catalog" class="container">
+            <h2 class="title">Каталог пульсометров</h2>
+            <ul class="catalog__tabs">
+                <li class="catalog__tab catalog__tab_active">
+                    <div>Для фитнеса</div>
+                </li>
+                <li class="catalog__tab">
+                    <div>для бега</div>
+                </li>
+                <li class="catalog__tab">
+                    <div>для триатлона</div>
+                </li>
+            </ul>
+
+            <div class="catalog__content catalog__content_active">
+                <div class="catalog-item">
+                    <div class="catalog-item__wrapper">
+                        <div class="catalog-item__content catalog-item__content_active">
+                            <img src="img/catalog/pulsometr.png" alt="pulsometr" class="catalog-item__img">
+                            <div class="catalog-item__subtitle">
+                                Пульсометр Polar FT1
+                            </div>
+                            <div class="catalog-item__desc">
+                                Для первых шагов в тренировках, основанных на сердечном ритме
+                            </div>
+                            <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
+                        </div>
+                        <div class="catalog-item__list">
+                            <ul>
+                                <li>
+                                    Вы услышите звуковое оповещение о нужном пульсе во время тренировки;
+                                </li>
+                                <li>
+                                    Вы увидите информативный графический индикатор целевых тренировочных зон пульса;
+                                </li>
+                                <li>
+                                    Также Вы увидите информацию о расходе калорий за тренировку;
+                                </li>
+                                <li>
+                                    Вы сможете посмотреть данные по 10 тренировкам.
+                                </li>
+                            </ul>
+                            <a href="#" class="catalog-item__back">назад</a>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="catalog-item__footer">
+                        <div class="catalog-item__prices">
+                            <div class="catalog-item__old-price">
+                                4 750 руб.
+                            </div>
+                            <div class="catalog-item__new-price">
+                                4 500 руб.
+                            </div>
+                        </div>
+                        <button class="button button_mini">КУПИТЬ</button>
+                    </div>
+                </div>
+                <div class="catalog-item">
+                    <div class="catalog-item__wrapper">
+                        <div class="catalog-item__content catalog-item__content_active">
+                            <img src="img/catalog/pulsometr.png" alt="pulsometr" class="catalog-item__img">
+                            <div class="catalog-item__subtitle">
+                                Пульсометр Suunto M2
+                            </div>
+                            <div class="catalog-item__desc">
+                                Для первых шагов в тренировках, основанных на сердечном ритме
+                            </div>
+                            <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
+                        </div>
+                        <div class="catalog-item__list"> 
+                            <ul>
+                                <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;
+                                </li>
+                                <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;
+                                </li>
+                                <li>
+                                    Также Вы увидите информацию о расходе калорий за тренировку;
+                                </li>
+                                <li>
+                                    Вы сможете посмотреть данные по 10 тренировкам.
+                                </li>
+                            </ul>
+                            <div>
+                                <a href="#" class="catalog-item__back">назад</a>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="catalog-item__footer">
+                        <div class="catalog-item__prices">
+                            <div class="catalog-item__old-price">
+                                6 690 руб.
+                            </div>
+                            <div class="catalog-item__new-price">
+                                6 641 руб.
+                            </div>
+                        </div>
+                        <button class="button button_mini">КУПИТЬ</button>
+                    </div>
+                </div>
+                <div class="catalog-item">
+                    <div class="catalog-item__wrapper">
+                        <div class="catalog-item__content catalog-item__content_active">
+                            <img src="img/catalog/pulsometr.png" alt="pulsometr" class="catalog-item__img">
+                            <div class="catalog-item__subtitle">
+                                Пульсометр Polar FT4
+                            </div>
+                            <div class="catalog-item__desc">
+                                Для первых шагов в тренировках, основанных на сердечном ритме
+                            </div>
+                            <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
+                        </div>
+                        <div class="catalog-item__list">
+                            <ul>
+                                <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;
+                                </li>
+                                <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;
+                                </li>
+                                <li>
+                                    Также Вы увидите информацию о расходе калорий за тренировку;
+                                </li>
+                                <li>
+                                    Вы сможете посмотреть данные по 10 тренировкам.
+                                </li>
+                            </ul>
+                            <div>
+                                <a href="#" class="catalog-item__back">назад</a>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="catalog-item__footer">
+                        <div class="catalog-item__prices">
+                            <div class="catalog-item__old-price">
+                                7 390 руб.
+                            </div>
+                            <div class="catalog-item__new-price">
+                                7 021 руб.
+                            </div>
+                        </div>
+                        <button class="button button_mini">КУПИТЬ</button>
+                    </div>
+                </div>
+                <div class="catalog-item">
+                    <div class="catalog-item__wrapper">
+                        <div class="catalog-item__content catalog-item__content_active">
+                            <img src="img/catalog/pulsometr.png" alt="pulsometr" class="catalog-item__img">
+                            <div class="catalog-item__subtitle">
+                                Пульсометр Polar FT1
+                            </div>
+                            <div class="catalog-item__desc">
+                                Для первых шагов в тренировках, основанных на сердечном ритме
+                            </div>
+                            <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
+                        </div>
+                        <div class="catalog-item__list">
+                            <ul>
+                                <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;
+                                </li>
+                                <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;
+                                </li>
+                                <li>
+                                    Также Вы увидите информацию о расходе калорий за тренировку;
+                                </li>
+                                <li>
+                                    Вы сможете посмотреть данные по 10 тренировкам.
+                                </li>
+                            </ul>
+                            <div>
+                                <a href="#" class="catalog-item__back">назад</a>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="catalog-item__footer">
+                        <div class="catalog-item__prices">
+                            <div class="catalog-item__old-price">
+                                4 750 руб.
+                            </div>
+                            <div class="catalog-item__new-price">
+                                4 500 руб.
+                            </div>
+                        </div>
+                        <button class="button button_mini">КУПИТЬ</button>
+                    </div>
+                </div>
+                <div class="catalog-item">
+                    <div class="catalog-item__wrapper">
+                        <div class="catalog-item__content catalog-item__content_active">
+                            <img src="img/catalog/pulsometr.png" alt="pulsometr" class="catalog-item__img">
+                            <div class="catalog-item__subtitle">
+                                Пульсометр Polar FT1
+                            </div>
+                            <div class="catalog-item__desc">
+                                Для первых шагов в тренировках, основанных на сердечном ритме
+                            </div>
+                            <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
+                        </div>
+                        <div class="catalog-item__list">
+                            <ul>
+                                <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;
+                                </li>
+                                <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;
+                                </li>
+                                <li>
+                                    Также Вы увидите информацию о расходе калорий за тренировку;
+                                </li>
+                                <li>
+                                    Вы сможете посмотреть данные по 10 тренировкам.
+                                </li>
+                            </ul>
+                            <div>
+                                <a href="#" class="catalog-item__back">назад</a>       
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="catalog-item__footer">
+                        <div class="catalog-item__prices">
+                            <div class="catalog-item__old-price">
+                                4 750 руб.
+                            </div>
+                            <div class="catalog-item__new-price">
+                                4 500 руб.
+                            </div>
+                        </div>
+                        <button class="button button_mini">КУПИТЬ</button>
+                    </div>
+                </div>
+                <div class="catalog-item">
+                    <div class="catalog-item__wrapper">
+                        <div class="catalog-item__content catalog-item__content_active">
+                            <img src="img/catalog/pulsometr.png" alt="pulsometr" class="catalog-item__img">
+                            <div class="catalog-item__subtitle">
+                                Пульсометр Polar FT1
+                            </div>
+                            <div class="catalog-item__desc">
+                                Для первых шагов в тренировках, основанных на сердечном ритме
+                            </div>
+                            <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
+                        </div>
+                        <div  class="catalog-item__list">
+                            <ul>
+                                <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;
+                                </li>
+                                <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;
+                                </li>
+                                <li>
+                                    Также Вы увидите информацию о расходе калорий за тренировку;
+                                </li>
+                                <li>
+                                    Вы сможете посмотреть данные по 10 тренировкам.
+                                </li>
+                            </ul>
+                            <div>
+                                <a href="#" class="catalog-item__back">назад</a>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="catalog-item__footer">
+                        <div class="catalog-item__prices">
+                            <div class="catalog-item__old-price">
+                                4 750 руб.
+                            </div>
+                            <div class="catalog-item__new-price">
+                                4 500 руб.
+                            </div>
+                        </div>
+                        <button class="button button_mini">КУПИТЬ</button>
+                    </div>
+                </div>
             </div>
-            <div class="choice_text">Машины на каждый день.
-            <br>
-            Лучше, быстрее и дешевле, чем такси
+            <div class="catalog__content">
+                <div class="catalog-item">
+                    <div class="catalog-item__wrapper">
+                        <div class="catalog-item__content catalog-item__content_active">
+                            <img src="img/catalog/pulsometr.png" alt="pulsometr" class="catalog-item__img">
+                            <div class="catalog-item__subtitle">
+                                Пульсометр Polar FT1
+                            </div>
+                            <div class="catalog-item__desc">
+                                Для первых шагов в тренировках, основанных на сердечном ритме
+                            </div>
+                            <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
+                        </div>
+                        <div  class="catalog-item__list">
+                            <ul>
+                                <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;
+                                </li>
+                                <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;
+                                </li>
+                                <li>
+                                    Также Вы увидите информацию о расходе калорий за тренировку;
+                                </li>
+                                <li>
+                                    Вы сможете посмотреть данные по 10 тренировкам.
+                                </li>
+                            </ul>
+                            <div>
+                                <a href="#" class="catalog-item__back">назад</a>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="catalog-item__footer">
+                        <div class="catalog-item__prices">
+                            <div class="catalog-item__old-price">
+                                4 750 руб.
+                            </div>
+                            <div class="catalog-item__new-price">
+                                4 500 руб.
+                            </div>
+                        </div>
+                        <button class="button button_mini">КУПИТЬ</button>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog__content">
+                <div class="catalog-item">
+                    <div class="catalog-item__wrapper">
+                        <div class="catalog-item__content catalog-item__content_active">
+                            <img src="img/catalog/pulsometr.png" alt="pulsometr" class="catalog-item__img">
+                            <div class="catalog-item__subtitle">
+                                Пульсометр Polar FT1
+                            </div>
+                            <div class="catalog-item__desc">
+                                Для первых шагов в тренировках, основанных на сердечном ритме
+                            </div>
+                            <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
+                        </div>
+                        <div class="catalog-item__list">
+                            <ul>
+                                <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;
+                                </li>
+                                <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;
+                                </li>
+                                <li>
+                                    Также Вы увидите информацию о расходе калорий за тренировку;
+                                </li>
+                                <li>
+                                    Вы сможете посмотреть данные по 10 тренировкам.
+                                </li>
+                            </ul>
+                            <div>
+                                <a href="#" class="catalog-item__back">назад</a>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="catalog-item__footer">
+                        <div class="catalog-item__prices">
+                            <div class="catalog-item__old-price">
+                                4 750 руб.
+                            </div>
+                            <div class="catalog-item__new-price">
+                                4 500 руб.
+                            </div>
+                        </div>
+                        <button class="button button_mini">КУПИТЬ</button>
+                    </div>
+                </div>
+                <div class="catalog-item">
+                    <div class="catalog-item__wrapper">
+                        <div class="catalog-item__content catalog-item__content_active">
+                            <img src="img/catalog/pulsometr.png" alt="pulsometr" class="catalog-item__img">
+                            <div class="catalog-item__subtitle">
+                                Пульсометр Polar FT1
+                            </div>
+                            <div class="catalog-item__desc">
+                                Для первых шагов в тренировках, основанных на сердечном ритме
+                            </div>
+                            <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
+                        </div>
+                        <div class="catalog-item__list">
+                            <ul>
+                                <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;
+                                </li>
+                                <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;
+                                </li>
+                                <li>
+                                    Также Вы увидите информацию о расходе калорий за тренировку;
+                                </li>
+                                <li>
+                                    Вы сможете посмотреть данные по 10 тренировкам.
+                                </li>
+                            </ul>
+                            <div>
+                                <a href="#" class="catalog-item__back">назад</a>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="catalog-item__footer">
+                        <div class="catalog-item__prices">
+                            <div class="catalog-item__old-price">
+                                4 750 руб.
+                            </div>
+                            <div class="catalog-item__new-price">
+                                4 500 руб.
+                            </div>
+                        </div>
+                        <button class="button button_mini">КУПИТЬ</button>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <section class="require" id="require">
+
+    <section class="feedback">
         <div class="container">
-            <div class="label">возможности</div>
-            <div class="title">Условия и требования</div>  
-        <div class="row">
-            <div class="col-md-6">
-                <div class="require_block">
-                    <div class="require_title">УСЛОВИЯ: со своим авто:</div>
-                <ul class="require_list">
-                    <li>Подключаем к системе UBER под 10%.</li>
-                    <li>Ни каких взносов  0%!</li>
-                    <li>Можем подключать удаленно без приезда в офис</li>
-                    <li>ИП не требуется</li>
-                    <li>Заказы распределяются без учета рейтинга ближайшим водителям</li>
-                    <li>Работа только по безналичному расчету</li>
-                    <li>Деньги перечисляем на карту водителю или наличными в офисе</li>
-                </ul>
-                <div class="require_text">
-                    В день заработок составляет 7000-12000р + бонус 3000т рублей
+            <h2 class="title">отзывы клиентов</h2>
+            <div class="feedback__wrapper">
+                <div class="feedback__item wow animate__animated animate__slideInLeft" data-wow-duration="1.2s" data-1ow-delay="0.5s">
+                    <div class="feedback__img">
+                        <img src="img/feedback/photo_1.png" alt="1">
+                    </div>
+                    <div class="feedback__desc">
+                        <h3 class="feedback__title">
+                            Ирина Иванченко
+                        </h3>
+                        <h4 class="feedback__subtitle">
+                            2 полумарафона
+                        </h4>
+                        <div class="feedback__desc">
+                            Не знала, что себе купить - обратилась к ребятам из RunSmart - подобрали пульсометр, который подошёл именно под мои цели и финансовые возможности.Через некоторое время решила обновить гаджет - не раздумывая обратилась туда же.
+                            <span></span>
+                            Новые цели - новый гаджет!
+                            <span></span>
+                            Спасибо, RunSmart!
+                        </div>
+                    </div>
+                </div>
+                <div class="feedback__item wow animate__animated animate__slideInRight" data-wow-duration="1.2s" data-wow-delay="0.5s">
+                    <div class="feedback__img">
+                        <img src="img/feedback/photo_2.png" alt="2">
+                    </div>
+                    <div class="feedback__desc">
+                        <h3 class="feedback__title">
+                            Иван Сёмочкин
+                        </h3>
+                        <h4 class="feedback__subtitle">
+                            1 полумарафон
+                        </h4>
+                        <div class="feedback__desc">
+                            Крутая штука-пульсометр. Обычно без них бегал. Оказывается только хуже себе делал. 
+                            <span></span>
+                            Купил пульсометр, ещё в подарок получил тренировку. Со мной вместе провели первую тренировку, научили пользоваться новым гаджетом. Также объяснили основы анатомии, составили план тренировок на месяц вперёд.
+                            <span></span>
+                            С ними подготовился к своему первому полумарафону! Спасибо!!!
+                        </div>
+                    </div>
+                </div>
+                <div class="feedback__item wow animate__animated animate__slideInLeft" data-wow-duration="1.2s" data-wow-delay="0.5s">
+                    <div class="feedback__img">
+                        <img src="img/feedback/photo_3.png" alt="3">
+                    </div>
+                    <div class="feedback__desc">
+                        <h3 class="feedback__title">
+                            Юлия Дашкина
+                        </h3>
+                        <h4 class="feedback__subtitle">
+                            2 полумарафона
+                        </h4>
+                        <div class="feedback__desc">
+                            Долго не могла начать бегать, т.к. до этого несколько раз начинала, но становилось тяжело и я бросала. От друзей услышала о RunSmart и о беге с контролем пульса и решила попробовать.
+                            <span></span>
+                            Позвонила, ребята поинтересовались моими целями и подобрали очень интересный вариант со скидкой! Теперь бегаю и наслаждаюсь бегом! Пробежала уже 2 полумарафона и несколько более коротких забегов и не намерена останавливаться!
+                            <span></span>
+                            Спасибо!!!
+                        </div>
+                    </div>
                 </div>
             </div>
-                </div>
-            <div class="col-md-6">
-                <div class="require_block">
-                    <div class="require_title">УСЛОВИЯ: на авто компании:</div>
-                    <ul class="require_list">
-                        <li>Предоставляем авто без залога</li>
-                        <li>Без ежедневных выплат по аренде</li>
-                        <li>Среда пятница и суббота работа на компанию остальные дни вы работаете на себя</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="require_block require_block_nmb">
-                    <div class="require_title">ТРЕБОВАНИЕ:</div>
-                    <ul class="require_list">
-                        <li>Наличие автомобиля без рекламы</li>
-                        <li>Автомобиль не должен быть желтый и не с желтыми номерами</li>
-                        <li>Машина не старше 3 лет</li>
-                        <li>Стаж вождения не менее 3 лет</li>
-                        <li>Девайс на системе андроид 4.0 и выше(самсунг)</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="require_block require_block_nmb">
-                    <div class="require_title">ДОКУМЕНТЫ:</div>
-                    <ul class="require_list">
-                        <li>Права 2 стороны</li>
-                        <li>Паспорт лицевая сторона</li>
-                        <li>СтС</li>
-                        <li>Лицензия (если есть)</li>
-                        <li>Номер телефона</li>
-                        <li>Номер карты для перечисления денег(указать в письме)!</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
         </div>
     </section>
-    <section class="world">
-        <div class="container">
-            <div class="label">города</div>
-            <div class="title">по всему миру</div>
-            <div class="subtitle">Мы в вашем городе и по всему миру</div>
-            <a class="world_link" href="#">посмотреть все города</a>
-        </div>
-    </section>
+
     <footer class="footer">
-        <div class="footer_container">
-            <div class="footer_line"></div>
-            <div class="footer_links">
-                <div class="footer_block_icons" style="order: 10">
-                    <a href="#" class="footer_block_icons_link">
+        <div class="footer__map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.3724536093314!2d37.64236114118829!3d55.7694028783735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a636edcd2ad%3A0x4c2ca101e2c8c617!2z0JzRj9GB0L3QuNGG0LrQuNC5INC_0YAt0LQsIDQvMywg0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8sIDEwNzA3OA!5e0!3m2!1sru!2spl!4v1670599530648!5m2!1sru!2spl" width="1440" height="630" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="footer__info">
+            <address class="footer__address">
+                Москва, Мясницкий проезд, д.3с1
+            </address>
+            
+            <a class="footer__phone" href="tel:84999228974">
+                8 (499) 922-89-74
+            </a>
+
+            <div class="footer__social">
+                <div class="footer__social-item">
+                    <a href="#" class="footer__link">
                         <i class="fa-brands fa-facebook-f"></i>
                     </a>
-                    <a href="#" class="footer_block_icons_link">
-                        <i class="fa-brands fa-twitter"></i>
-                    </a>
-                    <a href="#" class="footer_block_icons_link">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                    <a href="#" class="footer_block_icons_link">
+                </div>
+                <div class="footer__social-item">
+                    <a href="#" class="footer__link">
                         <i class="fa-brands fa-instagram"></i>
                     </a>
                 </div>
-                <div class="footer_block_menu" style="order: 0">
-                    <div class="footer_block_menu_main">
-                        <a href="#" class="footer_block_menu_main_link">на главную</a>
-                        <a href="#" class="footer_block_menu_main_link">города</a>
-                        <a href="#" class="footer_block_menu_main_link">для водителей</a>
-                    </div>
-                    <div class="footer_block_menu_2nd">
-                        <a href="#" class="footer_block_menu_2nd_link">центр поддержки</a>
-                        <a href="#" class="footer_block_menu_2nd_link">вакансии</a>
-                        <a href="#" class="footer_block_menu_2nd_link">разработчики</a>
-                        <a href="#" class="footer_block_menu_2nd_link">блог</a>
-                        <a href="#" class="footer_block_menu_2nd_link">о нас</a>
-                    </div>
-                    <a href="#" class="footer_block_menu_link">русский</a>
-                </div>
-                <div class="footer_block_shops" style="order: 10">
-                    <a href="#" class="footer_block_shops_link"><img src="img/footer/link app store.jpg" alt="app store"></a>
-                    <a href="#" class="footer_block_shops_link"><img src="img/footer/link google play.jpg" alt="google play"></a>
-                    <a href="#" class="footer_block_shops_link"><img src="img/footer/link windows store.jpg" alt="window store"></a>
+                <div class="footer__social-item">
+                    <a href="#" class="footer__link">
+                        <i class="fa-brands fa-pinterest-p"></i>
+                    </a>
                 </div>
             </div>
         </div>
     </footer>
+
+    <div class="overlay">
+        <div class="modal" id="consultation">
+            <div class="modal__close">
+                &times;
+            </div>
+            <div class="modal__subtitle">
+                Просто заполните форму заявки
+            </div>
+            <div class="modal__desc">
+                и мы перезвоним вам в течении 10 минут
+            </div>
+
+            <form class="feed-form feed-form_mt25" action="#">
+                <input name="name" placeholder="Ваше имя" type="text">
+                <input name="phone" placeholder="Ваш телефон" type="tel">
+                <input name="email" placeholder="Ваш E-mail" type="email">
+
+                <button class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>
+            </form>
+        </div>
+
+        <div class="modal" id="order">
+            <div class="modal__close">
+                &times;
+            </div>
+            <div class="modal__subtitle">
+                Ваш заказ:
+            </div>
+            <div class="modal__desc">
+                Пульсометр Polar FT1
+            </div>
+
+            <form class="feed-form feed-form_mt25" action="#">
+                <input name="name" required placeholder="Ваше имя" type="text">
+                <input name="phone" required placeholder="Ваш телефон" type="tel">
+                <input name="email" required placeholder="Ваш E-mail" type="email">
+
+                <button class="button button_submit">Купить</button>
+            </form>
+        </div>
+
+        <div class="modal modal_mini" id="thanks">
+            <div class="modal__close">
+                &times;
+            </div>
+            <div class="modal__subtitle">
+                Спасибо за вашу заявку!
+            </div>
+            <div class="modal__desc">
+                Наш менеджер свяжется с вами в ближайшее время!
+            </div>
+        </div>
+    </div>
+
+    <a href="#up" class="pageup">
+        <img src="icons/circle-chevron-up-solid.svg" alt="Up">
+    </a>
+
     
+
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/35c17310e2.js" crossorigin="anonymous"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
+
+    
+
 </body>
 </html>
